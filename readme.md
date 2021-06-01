@@ -49,7 +49,7 @@ Abaixo você encontrará todos as informações necessárias para iniciar o seu 
 Na data marcada pelo recrutador tenha sua aplicação rodando na sua máquina local para execução dos testes e para nos mostrar os pontos desenvolvidos e possíveis questionamentos.
 Faremos um code review junto contigo como se você já fosse do nosso time :heart:, você poderá explicar o que você pensou, como arquitetou e como pode evoluir o projeto.
 
-## Objetivo: PicPay Simplificado
+## Objetivo: EmpresaPay Simplificado
 
 Temos 2 tipos de usuários, os comuns e lojistas, ambos têm carteira com dinheiro e realizam transferências entre eles. Vamos nos atentar **somente** ao fluxo de transferência entre dois usuários.
 
@@ -132,7 +132,7 @@ Caso não tenha atingido aceitavelmente o que estamos propondo acima, não iremo
 
 
 ## Materiais úteis
-- https://picpay.com/site/sobre-nos
+- https://empresapay.com/site/sobre-nos
 - https://hub.packtpub.com/why-we-need-design-patterns/
 - https://refactoring.guru/
 - http://br.phptherightway.com/
