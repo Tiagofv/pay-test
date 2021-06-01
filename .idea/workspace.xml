@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="40846ebf-4fa4-486d-89eb-d6348c82382f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <interpreter name="laravel.test" composer="composer" />
+    </execution>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1sgo3pAMUpZTF8WxBXOoAghW6kh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Repositories/Eloquent" />
+      <recent name="$PROJECT_DIR$/app/Repositories/Contracts" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHPUnit.TransferTest.test_user_can_make_a_transfer_and_wallets_are_synced">
+    <configuration name="AuthTest.test_it_creates_user_and_wallet" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="laravel.test" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\AuthTest" configuration_file="/var/www/html/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/AuthTest.php" method="test_it_creates_user_and_wallet" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TransferTest.test_if_a_seller_user_can_see_his_transfers" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="laravel.test" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\TransferTest" configuration_file="/var/www/html/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TransferTest.php" method="test_if_a_seller_user_can_see_his_transfers" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TransferTest.test_if_a_user_can_see_his_transfers" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="laravel.test" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\TransferTest" configuration_file="/var/www/html/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TransferTest.php" method="test_if_a_user_can_see_his_transfers" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TransferTest.test_user_can_make_a_transfer" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="laravel.test" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\TransferTest" configuration_file="/var/www/html/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TransferTest.php" method="test_user_can_make_a_transfer" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TransferTest.test_user_can_make_a_transfer_and_wallets_are_synced" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="laravel.test" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner class="Tests\Feature\TransferTest" configuration_file="/var/www/html/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TransferTest.php" method="test_user_can_make_a_transfer_and_wallets_are_synced" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.TransferTest.test_user_can_make_a_transfer_and_wallets_are_synced" />
+        <item itemvalue="PHPUnit.TransferTest.test_user_can_make_a_transfer" />
+        <item itemvalue="PHPUnit.AuthTest.test_it_creates_user_and_wallet" />
+        <item itemvalue="PHPUnit.TransferTest.test_if_a_seller_user_can_see_his_transfers" />
+        <item itemvalue="PHPUnit.TransferTest.test_if_a_user_can_see_his_transfers" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40846ebf-4fa4-486d-89eb-d6348c82382f" name="Default Changelist" comment="" />
+      <created>1621303397365</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621303397365</updated>
+      <workItem from="1621303398384" duration="37000" />
+      <workItem from="1621303823600" duration="2399000" />
+      <workItem from="1621329941664" duration="18000" />
+      <workItem from="1621380946470" duration="3773000" />
+      <workItem from="1621417264977" duration="65000" />
+      <workItem from="1622421022638" duration="4314000" />
+      <workItem from="1622452376050" duration="20000" />
+      <workItem from="1622499392839" duration="6787000" />
+      <workItem from="1622538562590" duration="6692000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1505" y="201" width="618" height="684" key="#CLI_Interpreters" timestamp="1622541230599">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="1505" y="201" width="824" height="691" key="#CLI_Interpreters/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622541230599" />
+    <state x="2928" y="211" width="618" height="684" key="#CLI_Interpreters/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622540409921" />
+    <state x="1688" y="384" width="579" height="338" key="#Docker" timestamp="1622540090656">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="1688" y="384" width="579" height="338" key="#Docker/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622540090656" />
+    <state x="1193" y="274" width="387" height="662" key="#com.intellij.ide.util.MemberChooser" timestamp="1622509695032">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="1193" y="274" width="387" height="662" key="#com.intellij.ide.util.MemberChooser/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622509695032" />
+    <state x="3321" y="236" width="387" height="641" key="#com.intellij.ide.util.MemberChooser/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622426129489" />
+    <state x="1013" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1622544439086">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="1013" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622544439086" />
+    <state width="2518" height="286" key="GridCell.Tab.0.bottom" timestamp="1622545158546">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="2518" height="286" key="GridCell.Tab.0.bottom/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622545158546" />
+    <state width="1675" height="286" key="GridCell.Tab.0.bottom/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622540412919" />
+    <state width="2518" height="286" key="GridCell.Tab.0.center" timestamp="1622545158545">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="2518" height="286" key="GridCell.Tab.0.center/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622545158545" />
+    <state width="1675" height="286" key="GridCell.Tab.0.center/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622540412919" />
+    <state width="2518" height="286" key="GridCell.Tab.0.left" timestamp="1622545158545">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="2518" height="286" key="GridCell.Tab.0.left/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622545158545" />
+    <state width="1675" height="286" key="GridCell.Tab.0.left/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622540412919" />
+    <state width="2518" height="286" key="GridCell.Tab.0.right" timestamp="1622545158546">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="2518" height="286" key="GridCell.Tab.0.right/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622545158546" />
+    <state width="1675" height="286" key="GridCell.Tab.0.right/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622540412919" />
+    <state x="1003" y="58" width="655" height="593" key="NewPhpClassDialog" timestamp="1622508420572">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="1003" y="58" width="662" height="571" key="NewPhpClassDialog/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622508420572" />
+    <state x="3312" y="32" width="655" height="593" key="NewPhpClassDialog/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622425783878" />
+    <state x="1424" y="175" width="992" height="737" key="SettingsEditor" timestamp="1622540312847">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="1424" y="175" width="992" height="737" key="SettingsEditor/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622540312847" />
+    <state x="1636" y="313" width="558" height="460" key="refactoring.ChangeSignatureDialog" timestamp="1622500813147">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="1636" y="313" width="558" height="460" key="refactoring.ChangeSignatureDialog/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622500813147" />
+    <state x="1583" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1622545244952">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="1583" y="239" width="672" height="678" key="search.everywhere.popup/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622545244952" />
+    <state x="3747" y="217" width="672" height="696" key="search.everywhere.popup/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622539251448" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/picpay_test@TransferTest_test_user_can_make_a_transfer.xml" NAME="TransferTest.test_user_can_make_a_transfer Coverage Results" MODIFIED="1622540568305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
