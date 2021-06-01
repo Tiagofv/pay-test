@@ -11,7 +11,7 @@ class Transfer extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
-
+    public $incrementing = false;
     protected static function boot()
     {
         parent::boot();
@@ -22,10 +22,15 @@ class Transfer extends Model
     }
 
 
+    public function getKeyType()
+    {
+        return 'string';
+    }
+
     /**
      * @return BelongsTo
      */
-    public function payer() : BelongsTo
+    public function payer(): BelongsTo
     {
         return $this->belongsTo(User::class, 'payer_id');
     }
@@ -33,7 +38,7 @@ class Transfer extends Model
     /**
      * @return BelongsTo
      */
-    public function payee() : BelongsTo
+    public function payee(): BelongsTo
     {
         return $this->belongsTo(User::class, 'payee_id');
     }

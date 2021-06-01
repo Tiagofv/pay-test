@@ -2,6 +2,12 @@
 
 namespace App\Providers;
 
+use App\Events\TransferReceived;
+use App\Listeners\SendTransferReceivedNotification;
+use App\Models\Transfer;
+use App\Models\User;
+use App\Observers\TransferObserver;
+use App\Observers\UserObserver;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -18,6 +24,9 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        TransferReceived::class => [
+            SendTransferReceivedNotification::class
+        ]
     ];
 
     /**
@@ -27,6 +36,7 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Transfer::observe(TransferObserver::class);
+        User::observe(UserObserver::class);
     }
 }

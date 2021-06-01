@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\TransferReceived;
 use App\Exceptions\OutOfMoneyException;
 use App\Http\Requests\TransferStoreRequest;
 use App\Models\Transfer;
@@ -53,7 +54,6 @@ class TransferController extends Controller
             'payee_id' => $data['payee_id'],
             'amount' => $amount
         ]);
-
         return response()->json($transfer);
     }
 

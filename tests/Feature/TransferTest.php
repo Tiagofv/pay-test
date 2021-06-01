@@ -2,9 +2,11 @@
 
 namespace Tests\Feature;
 
+use App\Events\TransferReceived;
 use App\Models\Transfer;
 use App\Models\Wallet;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Event;
 use Tests\Helpers;
 use Tests\TestCase;
 
@@ -27,7 +29,7 @@ class TransferTest extends TestCase
 
     public function test_if_a_common_user_can_see_his_transfers()
     {
-        $user = (new Helpers())->createUser();
+        $user = (new Helpers())->createUser(['type' => 'common']);
         $this->actingAs($user, 'api');
         Transfer::factory()->create(['payer_id' => $user->id]);
         $response = $this->json('GET', $this->baseUrl);
@@ -57,6 +59,7 @@ class TransferTest extends TestCase
 
     public function test_user_can_make_a_transfer_and_wallets_are_synced()
     {
+        Event::fake([TransferReceived::class]);
         $payer = (new Helpers())->createUser(['type' => 'common'], 101);
         $payee = (new Helpers())->createUser(['type' => 'seller'], 0);
         $this->actingAs($payer, 'api');
@@ -69,6 +72,7 @@ class TransferTest extends TestCase
         $response->assertStatus(200);
         $this->assertTrue(Wallet::where('id', $payee->id)->first()->value === 100.0);
         $this->assertTrue(Wallet::where('id', $payer->id)->first()->value === 1.0);
+        Event::assertDispatched(TransferReceived::class);
     }
 
     public function test_seller_cant_make_a_transfer()

@@ -2,6 +2,7 @@
 
 namespace App\Observers;
 
+use App\Events\TransferReceived;
 use App\Models\Transfer;
 use App\Repositories\Contracts\WalletRepositoryInterface;
 use App\Repositories\Eloquent\WalletRepository;
@@ -17,6 +18,7 @@ class TransferObserver
     public function created(Transfer $transfer)
     {
         (new WalletRepository())->syncWallet($transfer);
+        TransferReceived::dispatch($transfer);
     }
 
     /**
