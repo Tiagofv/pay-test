@@ -2,18 +2,41 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\TransferReceived;
-use App\Exceptions\OutOfMoneyException;
 use App\Http\Requests\TransferStoreRequest;
-use App\Models\Transfer;
 use App\Repositories\Contracts\TransferRepositoryInterface;
 use http\Client\Response;
-use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 
 class TransferController extends Controller
 {
+
     /**
+     * @OA\Get(
+     *      path="/api/transfers",
+     *      operationId="getTransfersIndex",
+     *      tags={"Transfers"},
+     *      summary="Get all transfers. Must be authenticated.",
+     *      description="Returns list of transfers for the authenticated user.",
+     *     @OA\SecurityScheme(
+     *     type="http",
+     *     scheme="bearer",
+     *     bearerFormat="JWT"
+     * ),
+     *      @OA\Response(
+     *          response=200,
+     *          @OA\MediaType(mediaType="application/json"),
+     *          description="successful operation",
+     *       ),
+     *       @OA\Response(
+     *          response=401,
+     *          @OA\MediaType(mediaType="application/json"),
+     *          description="Unauthenticated.",
+     *       ),
+     *     security={
+     *         {"bearerToken": {}}
+     *     }
+     *     )
+     * /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\JsonResponse
@@ -27,8 +50,53 @@ class TransferController extends Controller
         return response()->json($allPerCommonUser);
     }
 
-
     /**
+     * @OA\Post(
+     *      path="/api/transfers",
+     *      operationId="storeTransfer",
+     *      tags={"Transfers"},
+     *      summary="Stores a transfer. Must be authenticated.",
+     *      description="Stores a transfer",
+     *     @OA\SecurityScheme(
+     *     type="http",
+     *     scheme="bearer",
+     *     bearerFormat="JWT"
+     * ),
+     *      @OA\Response(
+     *          response=200,
+     *          @OA\MediaType(mediaType="application/json"),
+     *          description="successful operation",
+     *       ),
+     *       @OA\Response(
+     *          response=401,
+     *          @OA\MediaType(mediaType="application/json"),
+     *          description="Unauthenticated.",
+     *       ),
+     *     security={
+     *         {"bearerToken": {}}
+     *     },
+     *     @OA\RequestBody(
+     *         description="Input data format",
+     *         @OA\MediaType(
+     *             mediaType="application/json",
+     *             @OA\Schema(
+     *                 type="object",
+     *                 @OA\Property(
+     *                     property="payee_id",
+     *                     description="The id of the receiver",
+     *                     type="integer",
+     *                 ),
+     *                 @OA\Property(
+     *                     property="amount",
+     *                     description="The amount that the user wants to transfer",
+     *                     type="number"
+     *                 )
+     *             )
+     *         )
+     *     )
+     *
+     *     )
+     *
      * Store a newly created resource in storage.
      *
      * @param \Illuminate\Http\Request $request
@@ -39,12 +107,13 @@ class TransferController extends Controller
         $data = $request->validated();
         $authenticatable = auth()->user();
         $amount = $data['amount'];
-        if($authenticatable->type === 'seller') {
+        if ($authenticatable->type === 'seller') {
             throw ValidationException::withMessages([
                 "type" => "You cannot make transfers, only receive."
             ]);
         }
-        if (!$transferRepository->verifiesUserHasBalance($authenticatable, $amount)){;
+        if (!$transferRepository->verifiesUserHasBalance($authenticatable, $amount)) {
+            ;
             throw ValidationException::withMessages([
                 "balance" => "You're out of balance. Please cash in some money."
             ]);
@@ -57,7 +126,42 @@ class TransferController extends Controller
         return response()->json($transfer);
     }
 
+
     /**
+     * @OA\Get(
+     *      path="/api/transfers/{id}",
+     *      operationId="getTransfer",
+     *      tags={"Transfers"},
+     *      summary="Get detail about a transfer. Must be authenticated.",
+     *      description="Returns a transfer",
+     *      @OA\Parameter(
+     *          name="id",
+     *          description="Transfer uuid",
+     *          required=true,
+     *          in="path",
+     *          @OA\Schema(
+     *              type="integer"
+     *          )
+     *      ),
+     *     @OA\SecurityScheme(
+     *     type="http",
+     *     scheme="bearer",
+     *     bearerFormat="JWT"
+     * ),
+     *      @OA\Response(
+     *          response=200,
+     *          @OA\MediaType(mediaType="application/json"),
+     *          description="successful operation",
+     *       ),
+     *       @OA\Response(
+     *          response=401,
+     *          @OA\MediaType(mediaType="application/json"),
+     *          description="Unauthenticated.",
+     *       ),
+     *     security={
+     *         {"bearerToken": {}}
+     *     }
+     *     )
      * Display the specified resource.
      *
      * @param \App\Models\Transfer $transfer

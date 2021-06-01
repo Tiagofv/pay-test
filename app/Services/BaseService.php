@@ -32,6 +32,8 @@ abstract class BaseService
         ]);
     }
 
+
+
     /**
      * @param string $method
      * @param string $url
@@ -52,23 +54,17 @@ abstract class BaseService
         try {
             $response = $this->getClient($data)->request($method, $url);
             return json_decode($response->getBody()->getContents());
-        } catch (RequestException $requestException) {
-            return [
-                'success' => false,
-                'message' => 'There seems to be a problem with your internet connection.',
-                'response' => $requestException->getResponse()
-            ];
         } catch (ClientException $clientException) {
             return [
                 'success' => false,
                 'message' => 'There seems to be a problem with the entered data.',
-                'response' => $clientException->getResponse()
+                'response' => $clientException->getResponse()->getBody()->getContents()
             ];
         } catch (ServerException $serverException) {
             return [
                 'success' => false,
                 'message' => 'The server is unaivailable or presents error.',
-                'response' => $serverException->getResponse()
+                'response' => $serverException->getResponse()->getBody()->getContents()
             ];
         } catch (\Exception $exception) {
             return [

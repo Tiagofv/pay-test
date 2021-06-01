@@ -16,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::post('/register', [\App\Http\Controllers\AuthController::class, 'store']);
 Route::post('/login', [\App\Http\Controllers\AuthController::class, 'login']);
 
-Route::middleware('auth:api')->group(function (){
-    Route::apiResource('wallets', \App\Http\Controllers\WalletController::class);
-    Route::apiResource('transfers', \App\Http\Controllers\TransferController::class);
+Route::middleware('auth:api')->group(function () {
+    Route::apiResource('wallets', \App\Http\Controllers\WalletController::class)
+        ->only(['index', 'show']);
+    Route::apiResource('transfers', \App\Http\Controllers\TransferController::class)
+        ->only(['index', 'store', 'show']);
     Route::get('/detail', [\App\Http\Controllers\AuthController::class, 'show']);
 });
 

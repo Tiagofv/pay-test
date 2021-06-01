@@ -23,11 +23,12 @@ class UserFactory extends Factory
      */
     public function definition()
     {
+        $localFaker = \Faker\Factory::create('pt_BR');
         return [
             'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
-            'cpf' => Str::random(11),
-            'cnpj' => Str::random(14),
+            'cpf' => $localFaker->cpf(false),
+            'cnpj' => $localFaker->cnpj(false),
             'type' => $this->faker->randomElement(['common', 'seller']),
             'email_verified_at' => now(),
             'password' => Hash::make('admin123'), // password

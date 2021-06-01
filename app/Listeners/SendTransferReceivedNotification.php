@@ -5,18 +5,10 @@ namespace App\Listeners;
 use App\Events\TransferReceived;
 use App\Services\MockNotificationService;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Support\Facades\Log;
 
 class SendTransferReceivedNotification implements ShouldQueue
 {
-    use InteractsWithQueue;
-
-    /**
-     * The number of times the queued listener may be attempted.
-     *
-     * @var int
-     */
-    public $tries = 5;
 
     /**
      * Create the event listener.
@@ -36,6 +28,8 @@ class SendTransferReceivedNotification implements ShouldQueue
      */
     public function handle(TransferReceived $event)
     {
+        // sending the notification
+        Log::debug('Trying to send your email...');
         (new MockNotificationService())->sendNotification();
     }
 }
