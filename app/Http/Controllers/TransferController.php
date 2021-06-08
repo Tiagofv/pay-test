@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\TransferStoreRequest;
 use App\Repositories\Contracts\TransferRepositoryInterface;
-use http\Client\Response;
 use Illuminate\Validation\ValidationException;
 
 class TransferController extends Controller

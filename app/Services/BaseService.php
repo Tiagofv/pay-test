@@ -1,12 +1,10 @@
 <?php
 
-
 namespace App\Services;
 
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
-use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Exception\ServerException;
 
 abstract class BaseService
@@ -31,7 +29,6 @@ abstract class BaseService
             'body' => json_encode($formData)
         ]);
     }
-
 
 
     /**

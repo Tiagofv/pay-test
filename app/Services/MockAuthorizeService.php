@@ -4,7 +4,6 @@
 namespace App\Services;
 
 
-use GuzzleHttp\Client;
 
 class MockAuthorizeService extends BaseService
 {

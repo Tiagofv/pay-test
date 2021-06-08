@@ -1,4 +1,4 @@
-#Setup do projeto
+# Setup do projeto
 Foi utilizados para desenvolvimento o Laravel Sail (Ambiente em docker) https://laravel.com/docs/8.x/sail.
 Caso não queira utilizar Docker, você precisará de:
 - PHP 8.0

@@ -6,7 +6,6 @@ namespace App\Repositories\Eloquent;
 
 use App\Models\User;
 use App\Repositories\Contracts\AuthRepositoryInterface;
-use Illuminate\Support\Collection;
 
 class AuthRepository extends BaseRepository implements AuthRepositoryInterface
 {
