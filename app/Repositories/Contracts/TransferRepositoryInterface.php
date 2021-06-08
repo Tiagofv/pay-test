@@ -10,8 +10,9 @@ interface TransferRepositoryInterface
 
     public function store(array $data);
 
-    public function show(int $id);
+    public function show($id);
 
     public function verifiesUserHasBalance($user, float $amount);
 
+    public function showByUuid($user, string $uuid);
 }

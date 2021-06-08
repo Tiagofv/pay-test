@@ -42,10 +42,10 @@ abstract class BaseRepository
 
     /**
      * Search for a given Id
-     * @param int $id
+     * @param mixed $id
      * @return mixed
      */
-    public function show(int $id)
+    public function show($id)
     {
         return $this->model->findOrFail($id);
     }

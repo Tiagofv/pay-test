@@ -23,13 +23,18 @@ class WalletController extends Controller
      * )
      *
      */
+
     /**
-     * @OAS\SecurityScheme(
-     * securityScheme="bearerAuth",
-     * type="http",
-     * scheme="bearer"
-     * )
+     * @OA\SecurityScheme(
+     *      securityScheme="bearerAuth",
+     *      in="header",
+     *      name="bearerAuth",
+     *      type="http",
+     *      scheme="bearer",
+     *      bearerFormat="JWT",
+     * ),
      **/
+
     /**
      *
      * @OA\Get(
@@ -38,11 +43,7 @@ class WalletController extends Controller
      *      tags={"Wallets"},
      *      summary="Get list of all Wallets. Must be authenticated.",
      *      description="Returns list of wallets",
-     *     @OA\SecurityScheme(
-     *     type="http",
-     *     scheme="bearer",
-     *     bearerFormat="JWT"
-     * ),
+     *     security={{ "bearerAuth" : {} }},
      *      @OA\Response(
      *          response=200,
      *          @OA\MediaType(mediaType="application/json"),
@@ -77,6 +78,7 @@ class WalletController extends Controller
      *      tags={"Wallets"},
      *      summary="Get detail about a wallet. Must be authenticated.",
      *      description="Returns list of wallets",
+     *      security={{ "bearerAuth" : {} }},
      *      @OA\Parameter(
      *          name="id",
      *          description="Wallet id",

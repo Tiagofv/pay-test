@@ -16,11 +16,7 @@ class TransferController extends Controller
      *      tags={"Transfers"},
      *      summary="Get all transfers. Must be authenticated.",
      *      description="Returns list of transfers for the authenticated user.",
-     *     @OA\SecurityScheme(
-     *     type="http",
-     *     scheme="bearer",
-     *     bearerFormat="JWT"
-     * ),
+     *      security={{ "bearerAuth" : {} }},
      *      @OA\Response(
      *          response=200,
      *          @OA\MediaType(mediaType="application/json"),
@@ -31,9 +27,6 @@ class TransferController extends Controller
      *          @OA\MediaType(mediaType="application/json"),
      *          description="Unauthenticated.",
      *       ),
-     *     security={
-     *         {"bearerToken": {}}
-     *     }
      *     )
      * /**
      * Display a listing of the resource.
@@ -56,11 +49,7 @@ class TransferController extends Controller
      *      tags={"Transfers"},
      *      summary="Stores a transfer. Must be authenticated.",
      *      description="Stores a transfer",
-     *     @OA\SecurityScheme(
-     *     type="http",
-     *     scheme="bearer",
-     *     bearerFormat="JWT"
-     * ),
+     *      security={{ "bearerAuth" : {} }},
      *      @OA\Response(
      *          response=200,
      *          @OA\MediaType(mediaType="application/json"),
@@ -133,20 +122,16 @@ class TransferController extends Controller
      *      tags={"Transfers"},
      *      summary="Get detail about a transfer. Must be authenticated.",
      *      description="Returns a transfer",
+     *      security={{ "bearerAuth" : {} }},
      *      @OA\Parameter(
      *          name="id",
      *          description="Transfer uuid",
      *          required=true,
      *          in="path",
      *          @OA\Schema(
-     *              type="integer"
+     *              type="string"
      *          )
      *      ),
-     *     @OA\SecurityScheme(
-     *     type="http",
-     *     scheme="bearer",
-     *     bearerFormat="JWT"
-     * ),
      *      @OA\Response(
      *          response=200,
      *          @OA\MediaType(mediaType="application/json"),
@@ -157,18 +142,20 @@ class TransferController extends Controller
      *          @OA\MediaType(mediaType="application/json"),
      *          description="Unauthenticated.",
      *       ),
-     *     security={
-     *         {"bearerToken": {}}
-     *     }
+     *      @OA\Response(
+     *          response=404,
+     *          @OA\MediaType(mediaType="application/json"),
+     *          description="Transfer not found",
+     *       ),
      *     )
      * Display the specified resource.
      *
      * @param \App\Models\Transfer $transfer
      * @return \Illuminate\Http\Response
      */
-    public function show(TransferRepositoryInterface $repository, int $transfer)
+    public function show(TransferRepositoryInterface $repository,  $transfer)
     {
-        return response()->json($repository->show($transfer));
+        return response()->json($repository->showByUuid(auth()->user(), $transfer));
     }
 
 }

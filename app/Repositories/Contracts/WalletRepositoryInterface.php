@@ -10,7 +10,7 @@ interface WalletRepositoryInterface
 
     public function store(array $data);
 
-    public function show(int $id);
+    public function show($id);
 
     public function update(int $id, array $data);
 

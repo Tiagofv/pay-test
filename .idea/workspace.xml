@@ -21,11 +21,16 @@
   <component name="ChangeListManager">
     <list default="true" id="40846ebf-4fa4-486d-89eb-d6348c82382f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TransferController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TransferController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/AuthRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/AuthRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/BaseService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/BaseService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/MockAuthorizeService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/MockAuthorizeService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WalletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WalletController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Contracts/TransferRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Contracts/TransferRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Contracts/WalletRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Contracts/WalletRepositoryInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/BaseRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/BaseRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Eloquent/TransferRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Eloquent/TransferRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/api-docs/api-docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/api-docs/api-docs.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,14 +192,14 @@
       <recent name="$PROJECT_DIR$/app/Repositories/Contracts" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.WalletTest.test_it_show_a_specific_wallet">
-    <configuration name="TransferTest.test_if_a_common_user_can_see_his_transfers" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+  <component name="RunManager" selected="PHPUnit.TransferTest">
+    <configuration name="TransferTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="laravel.test" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Feature\TransferTest" configuration_file="/var/www/html/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TransferTest.php" method="test_if_a_common_user_can_see_his_transfers" scope="Method" />
+      <TestRunner class="Tests\Unit\TransferTest" configuration_file="/var/www/html/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/TransferTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="TransferTest.test_it_sync_wallets" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -206,13 +211,13 @@
       <TestRunner class="Tests\Unit\TransferTest" configuration_file="/var/www/html/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/TransferTest.php" method="test_it_sync_wallets" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="TransferTest.test_user_can_make_a_transfer_and_wallets_are_synced" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+    <configuration name="TransferTest.test_it_syncs_after_transfer" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="laravel.test" />
         </PhpTestInterpreterSettings>
       </CommandLine>
-      <TestRunner class="Tests\Feature\TransferTest" configuration_file="/var/www/html/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/TransferTest.php" method="test_user_can_make_a_transfer_and_wallets_are_synced" scope="Method" />
+      <TestRunner class="Tests\Unit\TransferTest" configuration_file="/var/www/html/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/TransferTest.php" method="test_it_syncs_after_transfer" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="WalletTest.test_it_show_a_specific_wallet" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -239,11 +244,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.TransferTest" />
+        <item itemvalue="PHPUnit.TransferTest.test_it_syncs_after_transfer" />
         <item itemvalue="PHPUnit.WalletTest.test_it_show_a_specific_wallet" />
         <item itemvalue="PHPUnit.WalletTest.test_it_show_all_wallets" />
         <item itemvalue="PHPUnit.TransferTest.test_it_sync_wallets" />
-        <item itemvalue="PHPUnit.TransferTest.test_user_can_make_a_transfer_and_wallets_are_synced" />
-        <item itemvalue="PHPUnit.TransferTest.test_if_a_common_user_can_see_his_transfers" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +271,7 @@
       <workItem from="1622538562590" duration="19619000" />
       <workItem from="1622561471295" duration="99000" />
       <workItem from="1623112651036" duration="1832000" />
-      <workItem from="1623141912494" duration="1098000" />
+      <workItem from="1623141912494" duration="4982000" />
     </task>
     <servers />
   </component>
@@ -300,34 +305,35 @@
     </state>
     <state x="1193" y="274" width="387" height="662" key="#com.intellij.ide.util.MemberChooser/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622509695032" />
     <state x="3321" y="236" width="387" height="641" key="#com.intellij.ide.util.MemberChooser/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622426129489" />
-    <state x="1013" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1622551580801">
-      <screen x="0" y="27" width="2560" height="1053" />
+    <state x="3320" y="278" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1623143931992">
+      <screen x="2560" y="0" width="1920" height="1080" />
     </state>
     <state x="1013" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622551580801" />
+    <state x="3320" y="278" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1623143931992" />
     <state x="1703" y="298" width="424" height="491" key="FileChooserDialogImpl" timestamp="1622549511882">
       <screen x="0" y="27" width="2560" height="1053" />
     </state>
     <state x="1703" y="298" width="424" height="491" key="FileChooserDialogImpl/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622549511882" />
-    <state width="1238" height="286" key="GridCell.Tab.0.bottom" timestamp="1622560750937">
-      <screen x="0" y="27" width="2560" height="1053" />
+    <state width="1878" height="277" key="GridCell.Tab.0.bottom" timestamp="1623144371376">
+      <screen x="2560" y="0" width="1920" height="1080" />
     </state>
     <state width="1238" height="286" key="GridCell.Tab.0.bottom/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622560750937" />
-    <state width="1675" height="286" key="GridCell.Tab.0.bottom/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622540412919" />
-    <state width="1238" height="286" key="GridCell.Tab.0.center" timestamp="1622560750936">
-      <screen x="0" y="27" width="2560" height="1053" />
+    <state width="1878" height="277" key="GridCell.Tab.0.bottom/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1623144371376" />
+    <state width="1878" height="277" key="GridCell.Tab.0.center" timestamp="1623144371375">
+      <screen x="2560" y="0" width="1920" height="1080" />
     </state>
     <state width="1238" height="286" key="GridCell.Tab.0.center/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622560750936" />
-    <state width="1675" height="286" key="GridCell.Tab.0.center/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622540412919" />
-    <state width="1238" height="286" key="GridCell.Tab.0.left" timestamp="1622560750936">
-      <screen x="0" y="27" width="2560" height="1053" />
+    <state width="1878" height="277" key="GridCell.Tab.0.center/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1623144371375" />
+    <state width="1878" height="277" key="GridCell.Tab.0.left" timestamp="1623144371375">
+      <screen x="2560" y="0" width="1920" height="1080" />
     </state>
     <state width="1238" height="286" key="GridCell.Tab.0.left/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622560750936" />
-    <state width="1675" height="286" key="GridCell.Tab.0.left/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622540412919" />
-    <state width="1238" height="286" key="GridCell.Tab.0.right" timestamp="1622560750936">
-      <screen x="0" y="27" width="2560" height="1053" />
+    <state width="1878" height="277" key="GridCell.Tab.0.left/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1623144371375" />
+    <state width="1878" height="277" key="GridCell.Tab.0.right" timestamp="1623144371376">
+      <screen x="2560" y="0" width="1920" height="1080" />
     </state>
     <state width="1238" height="286" key="GridCell.Tab.0.right/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622560750936" />
-    <state width="1675" height="286" key="GridCell.Tab.0.right/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1622540412919" />
+    <state width="1878" height="277" key="GridCell.Tab.0.right/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1623144371376" />
     <state x="1003" y="58" width="655" height="593" key="NewPhpClassDialog" timestamp="1622546156422">
       <screen x="0" y="27" width="2560" height="1053" />
     </state>
@@ -341,11 +347,15 @@
       <screen x="0" y="27" width="2560" height="1053" />
     </state>
     <state x="1636" y="313" width="558" height="460" key="refactoring.ChangeSignatureDialog/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622500813147" />
-    <state x="3747" y="217" width="672" height="696" key="search.everywhere.popup" timestamp="1623142576620">
+    <state x="3184" y="252" key="run.anything.popup" timestamp="1623146307557">
+      <screen x="2560" y="0" width="1920" height="1080" />
+    </state>
+    <state x="3184" y="252" key="run.anything.popup/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1623146307557" />
+    <state x="3747" y="217" width="672" height="696" key="search.everywhere.popup" timestamp="1623146066438">
       <screen x="2560" y="0" width="1920" height="1080" />
     </state>
     <state x="1583" y="239" width="672" height="678" key="search.everywhere.popup/2560.0.1920.1080/0.27.2560.1053@0.27.2560.1053" timestamp="1622556177758" />
-    <state x="3747" y="217" width="672" height="696" key="search.everywhere.popup/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1623142576620" />
+    <state x="3747" y="217" width="672" height="696" key="search.everywhere.popup/2560.0.1920.1080/0.27.2560.1053@2560.0.1920.1080" timestamp="1623146066438" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/picpay_test@TransferTest_test_user_can_make_a_transfer.xml" NAME="TransferTest.test_user_can_make_a_transfer Coverage Results" MODIFIED="1622540568305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

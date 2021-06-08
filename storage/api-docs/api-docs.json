@@ -137,7 +137,12 @@
                             "application/json": {}
                         }
                     }
-                }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
             }
         },
         "/api/transfers": {
@@ -164,7 +169,7 @@
                 },
                 "security": [
                     {
-                        "bearerToken": []
+                        "bearerAuth": []
                     }
                 ]
             },
@@ -231,7 +236,7 @@
                         "description": "Transfer uuid",
                         "required": true,
                         "schema": {
-                            "type": "integer"
+                            "type": "string"
                         }
                     }
                 ],
@@ -247,11 +252,17 @@
                         "content": {
                             "application/json": {}
                         }
+                    },
+                    "404": {
+                        "description": "Transfer not found",
+                        "content": {
+                            "application/json": {}
+                        }
                     }
                 },
                 "security": [
                     {
-                        "bearerToken": []
+                        "bearerAuth": []
                     }
                 ]
             }
@@ -323,6 +334,17 @@
                         "bearerToken": []
                     }
                 ]
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "name": "bearerAuth",
+                "in": "header",
+                "bearerFormat": "JWT",
+                "scheme": "bearer"
             }
         }
     },

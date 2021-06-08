@@ -161,6 +161,7 @@ class AuthController extends Controller
          *      tags={"Auth"},
          *      summary="Gets the authenticated user",
          *      description="Gets the authenticated user",
+         *      security={{ "bearerAuth" : {} }},
          *      @OA\Response(
          *          response=200,
          *          @OA\MediaType(mediaType="application/json"),

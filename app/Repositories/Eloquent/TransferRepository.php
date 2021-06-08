@@ -61,5 +61,18 @@ class TransferRepository extends BaseRepository implements TransferRepositoryInt
         return $transfer;
     }
 
+    /**
+     * @param array $data
+     * @return mixed
+     */
+    public function showByUuid($user, string $uuid): Transfer
+    {
+        $transfer = Transfer::findOrFail($uuid);
+        if($transfer->payer_id !== $user->id && $transfer->payee_id !== $user->id){
+            abort(404, 'Transfer not found.');
+        }
+        return $transfer;
+    }
+
 
 }
