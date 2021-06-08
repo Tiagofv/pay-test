@@ -8,6 +8,10 @@ Caso não queira utilizar Docker, você precisará de:
 A documentação da API foi gerada através do Swagger, pode ser encontrada na rota api/documentation.
 
 Design patterns utilizados: Services, Repositories, Observer, Events.
+# Possíveis melhorias de arquitetura
+## Apache kafka ao invés do redis
+O apache kafka é mais confiável, consome menos recursos e persiste a cópia dos registros mesmo após o processamento.
+Em ambientes Cloud e com dados grandes, o apache kafka pode ser mais barato. Entretanto o apache kafka não é tão rápido quanto o redis.
 
 # Desafio Back-end Empresa pay
 
